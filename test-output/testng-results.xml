@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-10T23:22:15 SAST" name="Default suite" finished-at="2024-01-10T23:22:19 SAST" duration-ms="4299">
+    <groups>
+    </groups>
+    <test started-at="2024-01-10T23:22:15 SAST" name="Default test" finished-at="2024-01-10T23:22:19 SAST" duration-ms="4299">
+      <class name="apitest.GetUsers">
+        <test-method signature="getSingleUserNotFound()[pri:1, instance:apitest.GetUsers@67427b69]" started-at="2024-01-10T23:22:15 SAST" name="getSingleUserNotFound" description="To get the details of user with id 3" finished-at="2024-01-10T23:22:18 SAST" duration-ms="2914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUserNotFound -->
+        <test-method signature="getUsers()[pri:2, instance:apitest.GetUsers@67427b69]" started-at="2024-01-10T23:22:18 SAST" name="getUsers" description="To create a new user" finished-at="2024-01-10T23:22:19 SAST" duration-ms="1248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsers -->
+      </class> <!-- apitest.GetUsers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

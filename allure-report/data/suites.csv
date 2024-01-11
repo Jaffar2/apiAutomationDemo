@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jan 11 01:51:36 CAT 2024","Thu Jan 11 01:51:37 CAT 2024","1255","Suite","Test","apitest.GetUsers","apitest.GetUsers","getUsers","To create a new user","Test Description : Verify the creation of a new user"
+"passed","Thu Jan 11 01:51:33 CAT 2024","Thu Jan 11 01:51:36 CAT 2024","3237","Suite","Test","apitest.GetUsers","apitest.GetUsers","getSingleUserNotFound","To get the details of user with id 3","Test Description : Verify the details of user of id-3"
