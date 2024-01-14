@@ -59,7 +59,7 @@ public class GetUsers extends BaseTest {
 				.then().log().all().extract().response();
 
 		int respStatusCode = response.getStatusCode();
-		Assert.assertEquals(respStatusCode, 202);
+		Assert.assertEquals(respStatusCode, 200);
 		String firstNameVal = response.path("data[0].first_name");
 		// System.out.println("The firstName is: " + firstNameVal);
 		Assert.assertEquals(firstNameVal, "Michael");

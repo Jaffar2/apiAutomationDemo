@@ -1,5 +1,6 @@
 apitest\AutomationListener.class
 apitest\fileutils\FileUtilities.class
+apitest\BaseTest.class
 apitest\RestAssuredResponseLogger.class
 apitest\RestAssuredRequestLogger.class
 apitest\GetUsers.class
