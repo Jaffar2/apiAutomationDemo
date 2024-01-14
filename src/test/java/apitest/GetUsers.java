@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.given;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -43,12 +44,13 @@ public class GetUsers extends BaseTest {
 	@Story("POST Request")
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Test Description : Verify the creation of a new user")
+	@Attachment("invoicePDF")
 
 	public void getUsers() {
 
 		Response response =
 
-				given()
+				given().log().all()
 				.contentType(ContentType.JSON).filters(requestLoggingFilter, responseLoggingFilter)
 				.queryParam("page", 2).baseUri("https://reqres.in/api/users")
 				.when()
