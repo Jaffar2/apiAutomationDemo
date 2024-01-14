@@ -31,7 +31,7 @@ public class GetUsers extends BaseTest {
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Test Description : Verify the details of user of id-3")
 	public void getSingleUserNotFound() {
-		given().filter(new AllureRestAssured()).filters(requestLoggingFilter, responseLoggingFilter)
+		given().log().all().filter(new AllureRestAssured()).filters(requestLoggingFilter, responseLoggingFilter)
 		.contentType(ContentType.JSON).baseUri("https://reqres.in/api/users/23")
 		.when().get().then().log().all().assertThat().statusCode(404);
 
